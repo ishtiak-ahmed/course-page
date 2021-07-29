@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: normal;
+}
+h2 {
+  margin-bottom: 1em;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: minmax(75px, 16%) auto;
+}
+.sidebar {
+  padding: 4em 0;
+  background-color: #ffe4d6;
+  height: 100vh;
+  &__item {
+    height: 50px;
+    width: 100%;
+    border-left: 5px solid transparent;
+    margin-bottom: 5em;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    &__icon {
+      width: 50px;
+      height: 50px;
+      margin: auto;
+    }
+    &.active,
+    &:hover {
+      border-left: 5px solid #8964d7;
+      fill: #8964d7;
+    }
+  }
+}
+.main {
+  background-color: #fff4ee;
+  padding-top: 3em;
+  height: 100vh;
+  overflow: hidden;
+  &__nav {
+    padding: 1em 2em;
+    padding-right: 3em;
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    font-weight: 600;
+    &__item {
+      color: #cbb1a2;
+      padding: 5px 0;
+      cursor: pointer;
+      &.active,
+      &:hover {
+        color: #8964d7;
+        border-bottom: 2px solid #8964d7;
+      }
+      & + .main__nav__item {
+        margin-left: 1em;
+      }
+    }
+  }
+  &__body {
+    max-height: 70vh;
+    overflow-y: scroll;
+    scrollbar-color: #f2cbbf;
+    padding: 0 2em;
+  }
+}
+
+.course__item {
+  color: #fff;
+  padding: 2em;
+  border-radius: 1em;
+  margin-bottom: 2em;
+  display: grid;
+  height: 400px;
+  grid-template-columns: auto 80px;
+  grid-template-rows: auto auto;
+  justify-content: space-between;
+  background-size: cover;
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.play-btn {
+  width: 84px;
+  height: 75px;
+}
+
+@media (max-width: 760px) {
+  .main__nav {
+    grid-template-columns: 1fr;
+  }
+  .course__item {
+    height: 275px;
+  }
+  .play-btn {
+    width: 58px;
+    height: 54px;
+  }
+}
