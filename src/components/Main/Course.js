@@ -1,7 +1,6 @@
-import React from "react";
 import playBtn from "../../img/play-btn.svg";
 
-export default function Course({ item, img }) {
+export default function Course({ item }) {
   return (
     <div
       className="course__item"
