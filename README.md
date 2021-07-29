@@ -1,8 +1,10 @@
 # Course Dashboard
 
+[Live Site](https://course-dashboard.netlify.app/)
+
 ## Task List
 
-    [ ] Sidebar menu
-    [ ] Course Menu
-    [ ] Course Item
-    [ ] Responsive
+    [x] Sidebar menu
+    [x] Course Menu
+    [x] Course Item
+    [x] Responsive
