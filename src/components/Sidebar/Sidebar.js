@@ -10,10 +10,10 @@ export default function Sidebar() {
         <img className="sidebar__item__icon" src={dashboardIcon} alt="" />
       </div>
       <div className="sidebar__item">
-        <img src={shoppingIcon} alt="" />
+        <img className="sidebar__item__icon" src={shoppingIcon} alt="" />
       </div>
       <div className="sidebar__item">
-        <img src={peopleIcon} alt="" />
+        <img className="sidebar__item__icon" src={peopleIcon} alt="" />
       </div>
     </div>
   );

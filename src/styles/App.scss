@@ -37,7 +37,8 @@ h2 {
     &.active,
     &:hover {
       border-left: 5px solid #8964d7;
-      fill: #8964d7;
+      filter: invert(60%) sepia(58%) saturate(5605%) hue-rotate(230deg)
+        brightness(89%) contrast(88%);
     }
   }
 }
